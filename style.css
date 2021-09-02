@@ -1,0 +1,273 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Utility classes */
+
+.h-primary {
+    font-size: 3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+
+/* css variables */
+
+:root {
+    --navbar-height: 50px;
+}
+
+
+/* Navigation Bar */
+
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+/* <------------------------Navigation Bar: Logo-------------------------> */
+
+#logo {
+    margin: 10px 20px;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+    margin: 5px 20px;
+}
+
+
+/* <-----------------------Navigation Bar: Nav-items ------------------------->*/
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    margin: 0px 8px;
+    padding: 6px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(255, 85, 85);
+}
+
+
+/* <-----------------------Home section------------------------->*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding: 8px 380px;
+}
+
+#home h1 {
+    /* font-size: 2.5em; */
+    color: white;
+    font-family: 'Bree Serif', serif;
+    margin: 20px 0px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#home::before {
+    content: '';
+    background: url('homeimg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.85;
+    z-index: -1;
+}
+
+
+/* <----------------------Order Now button------------------------>  */
+
+.btn1 {
+    background-color: red;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 25px;
+    margin: -106px 0px;
+    margin-top: 130px;
+}
+
+.btn1:hover {
+    background-color: rgb(250, 78, 78);
+}
+
+
+/* <-----------------------Services Section-------------------->  */
+
+.services-cont {
+    margin-top: 180px;
+}
+
+#services {
+    /* display: block;
+    margin: auto; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#services .box {
+    display: block;
+    margin: auto;
+    border: 2px solid red;
+    background-color: rgb(253, 214, 197);
+    border-radius: 10px;
+    width: 450px;
+    padding: 15px 25px;
+    margin: 5px 35px;
+}
+
+#services .box img {
+    display: block;
+    height: 180px;
+    width: 280px;
+    margin: auto;
+}
+
+
+/* <--------------------Client Section -------------------> */
+
+#clientsection {
+    margin-top: 20px;
+    height: 300px;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px 70px;
+}
+
+#client img {
+    height: 130px;
+}
+
+
+/* <---------------Contact Section------------------->  */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-box {
+    width: 400px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.form-grp {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 23px;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 2px 5px;
+    margin-top: -2px;
+    outline: none;
+}
+
+textarea {
+    border: 2px solid red;
+    padding: 2px 5px;
+    width: 280px;
+}
+
+
+/* <-----------FOOTER-----------------------------------> */
+
+hr {
+    border: 4px solid red;
+    margin-top: 20px;
+    /* margin-bottom: 30px; */
+    size: 10px;
+}
+
+footer {
+    color: white;
+    height: 100px;
+    padding-top: 30px;
+    /* margin-top: -20px; */
+    background-color: rgb(34, 34, 58)
+}
